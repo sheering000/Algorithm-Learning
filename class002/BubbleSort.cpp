@@ -1,4 +1,4 @@
-// 冒泡排序
+// 3种简单排序算法——冒泡排序
 #include <bits/stdc++.h>
 using namespace std;
 

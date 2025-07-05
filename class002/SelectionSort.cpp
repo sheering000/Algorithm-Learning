@@ -1,4 +1,4 @@
-// 选择排序
+// 3种简单排序算法——选择排序
 #include <bits/stdc++.h>
 using namespace std;
 

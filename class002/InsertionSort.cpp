@@ -1,4 +1,4 @@
-// 插入排序
+// 3种简单排序算法——插入排序
 #include <iostream>
 using namespace std;
 
