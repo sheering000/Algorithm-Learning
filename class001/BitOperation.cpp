@@ -3,26 +3,7 @@
 //   正数：从右到左，2的0次方、2的1次方、2的2次方……，最高位为0
 //   负数：从右到左，2的0次方、2的1次方、2的2次方……，最高位为1
 #include <iostream>
-#include <bitset>
 using namespace std;
-const int M_bit = 8;
-
-// 将任意进制整数转换为二进制输出
-void IntToBinary(int x){
-    if(x>255 || x<-256){
-        cout << "数字越界" << '\n';
-        return;
-    }
-    
-    int b_x[M_bit];
-    for(int i=0;i<M_bit;i++){
-        b_x[i] = (int)(bool)(x&(1<<i));
-    }
-    cout << "整数" << x << "的二进制表示为：" << "0b";
-    for(int i=M_bit-1;i>=0;i--){
-        cout << b_x[i];
-    }cout << '\n';
-}
 
 bool returnTrue() {cout << "Func returnTrue run" << '\n';return true;}
 bool returnFalse() {cout << "Func returnFalse run" << '\n';return false;}
@@ -69,10 +50,6 @@ int main(){
     cout << i << '\n';  // 输出负数
     cout << (i>>1) << '\n';  // 负数右移时，符号位不变（即最高位仍为1）
 
-
-    IntToBinary(3);
-    IntToBinary(0x1f);
-    IntToBinary(0b00001111);
 
     system("pause");
     return 0;
