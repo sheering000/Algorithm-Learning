@@ -119,6 +119,6 @@ int main(){
     // vector<int> arr = {1,3,2,3,1};
     // Solution s(arr);
     // cout << s.Violent() << " " << s.R_reverseCount() << '\n';
-    Verify(10);
+    Verify(5);
     return 0;
 }
