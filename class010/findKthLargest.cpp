@@ -3,6 +3,8 @@
 using namespace std;
 
 vector<int> nums = {2,1,8,74,9,6,2,3,0,11};
+
+/// 荷兰国旗问题，双指针
 static int head,tail;
 int findVal(int l,int r,int target){
     random_device rd;
